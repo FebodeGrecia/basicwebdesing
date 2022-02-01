@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#boton{
+
+    display: block;
+    background: rgb(123, 123, 245);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    width: 166px;
+    margin: 25px;
+    border-radius: 12px;
+    transition:all 700ms;
+    text-align: center;
+}
+
+#boton:hover {
+    background: turquoise;
+    border: 3px solid rgb(37, 228, 209);
+    color: rgb(241, 121, 100);
+}
+
+#caja{
+    display: block;
+    background: wheat;
+    color: #444;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    margin: 10px;
+    text-align: center;
+    animation-name: runer;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    box-shadow: 1px 0px 10px black;
+}
+
+@keyframes runer{
+    0%{
+        margin-left: 10px;
+        transform: rotate(0deg);
+        
+    }
+
+    50%{
+        border-radius: 1200px;
+        margin-left: 1200px;
+        transform: rotate(360deg);
+    }
+
+
+    100%{
+        margin-left: 0px ;
+        border: radius 99%; ;
+        transform: rotate(0deg);
+        
+    }
+}

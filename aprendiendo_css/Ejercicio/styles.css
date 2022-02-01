@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#general{
+    width: 1200px;
+    margin: 0px auto; /*esto centra los elementos*/
+    margin-top: 20px;
+    border: 1px solid gray;
+    
+}
+
+#header{
+    background: rgba(13, 66, 136, 0.582);
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    line-height: 79px; /*centra el elemento de manera vertical*/
+}
+
+#menu ul li{
+    display: inline-block; /*Esta es otra opción de menú vertical. Se hace de la otra manera para poder modificar cada uno de los elementos*/
+    list-style-type: none;
+    /*display: block;*/
+    /*float: left;*/
+    border-right: 1px solid #ccc;
+    
+}
+
+#menu ul li:hover a{
+    color: white ;
+
+}
+
+#menu ul li a{
+    color: royalblue;
+    display: block;
+    padding: 15px;
+
+}
+
+#menu ul li:hover{
+    background: royalblue;
+}
+
+#menu li{
+    
+    background: silver;
+}
+
+#menu {
+    background: silver; 
+}
+
+#contenido{
+    width: 69%;
+    float: left;
+}
+
+#lateral{
+    width: 30%;
+    float: left;
+    border: 1px solid #444;
+    min-height: 200px; /* para darle un valor mínimo al alto, o sea que sí o sí va a medir eso o más*/
+    max-height: 300px;
+    text-align: center;
+    box-shadow: 1px 0px 8px gray inset !important;
+    overflow-y: scroll;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#contenido {
+    border:  1px solid #444;
+}
+
+#contenido .caja{
+    border: 1px solid red;
+    width: 40%;
+
+    max-height: 350px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    line-height: 95px;
+    box-shadow: 1px 0px 8px gray ; /*primer número es eje x, segundo eje y, tercero es el difuminado y finalmente el color de la sombra*/
+    border-radius:10px ; /* O le puedes poner en un solo valor en pixeles o a cada uno de los lados que son primero, segundo tercer y cuarto borde respectivamente*/
+}
+
+footer{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    background: rgb(191, 194, 188);
+    line-height:61px;
+    border-top: 1px solid #ccc;
+    color: rgb(78, 76, 76);
+    text-shadow: 3px 6px 10px black  ; /*primer número es eje x, segundo eje y, tercero es el difuminado y finalmente el color de la sombra*/
+}
+
+.libre{
+    border: 1px solid gray;
+    color:rgba(255, 255, 255, 0.582);
+    width: 60px;
+    height: 60px;
+    background: rgb(83, 211, 121);
+    padding: 2px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    right: 10%;/*Este no está funcionando*/
+    bottom:10% ;/*Este no está funcionando*/
+
+}
+
+.libre2{
+    top: 0px;
+    left: 78%;
+}
+
+.fija{
+    border: 1px solid gray;
+    color:rgba(245, 16, 16, 0.582);
+    width: 60px;
+    height: 60px;
+    background: rgb(203, 221, 207);
+    position: fixed;
+    top: 20px;
+    left: 0%;
+}
+
