@@ -11,6 +11,7 @@
 
 body{
     background-image: url(img/paven.png);
+    width: 100%;
 }
 
 
@@ -145,28 +146,51 @@ body{
 /*SIDE*/
 
 #side{
-    width: 200px;
-    max-width: 210px;
+    width: 500px;
+    max-width: 50%;
     border: 1px solid red;
     background: white;
     text-align: center;
     margin: 5px;
+    width: 25%;
+    display: block;
+    float: left;
+    background-image: url(img/paven.png);
+
     
 
 }
 
 .caja {
     border: 1px solid #444;
-    width: 100%;
+    width: 200px;
     height: 250px;
     border-bottom:1px dashed gray;
     text-align: center;
     padding: 2px;
-    display: block;
-    margin-top: 5px;
+    display: block;  
+    background: white;
+    margin-left: 30px;
     
     
     
 }
 
-/*CONTENT/
+
+/*CONTENT*/
+
+#cont{
+    display: block;
+    width: 73%;
+    float: left;
+    border: 1px solid red ;
+}
+
+#cont .box{
+    width: 780px;
+    overflow-y: auto;
+    border:solid red;
+    margin: 0px auto;
+    margin-top: 15px;
+
+}
