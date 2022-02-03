@@ -1,0 +1,172 @@
+/*FUENTES*/
+
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(img/paven.png);
+}
+
+
+/*CABECERA*/
+
+#header{
+    min-width: 1024px;
+    width: 100%;
+    margin: 0px auto;
+    height: 250px;
+    
+    
+}
+
+#header #logotipo{
+    width: 770px;
+    height: 180px;
+    max-height: 300px;
+    margin: 0px auto;
+    padding-top: 30px;
+    /*border: solid red;*/
+}
+
+#header #logotipo img{
+    display: block;  
+    text-align: center;  
+    margin: 0px auto;
+    width: 140px;
+    
+  
+}
+
+#header h1  {
+    font-size: 25px;
+    text-align: center;
+    /*border: solid red;*/
+    width: 300px;
+    margin: 0px auto;
+    color: rgb(113, 176, 83);
+    text-transform: uppercase;
+}
+
+#header h1 a {
+    color: rgb(113, 176, 83);
+    
+}
+
+/*MENU*/
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#navbar {
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    font-size: 15px;
+    
+  
+
+
+}
+#navbar ul {
+    width: 1130px;
+    margin: 0px auto;/*Este me está centrando los elementos del menu, importante ver que se lo estoy aplicando a la lista entera osea a ul*/
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+    line-height: 40px;
+    border-right: 1px solid white;
+    transition: all 500ms;
+   
+}
+
+#navbar ul li:first-child{
+    border-left: 1px solid white ;
+}
+
+#navbar li a {
+    display: block;
+    padding-left: 20px;/*estos dos padding me estan dando más espacio entre elemento, ver que se lo estoy aplicando a cada link*/
+    padding-right: 20px;/*este padding hace que solo me modifique los lados derecha e izquierda */
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#navbar li:hover{
+    background:rgb(113, 176, 83) ;
+    box-shadow: 0px 0px 3px green inset !important;
+    border: 1px solid green;
+}
+
+/*MENU DESPLEGABLE*//*El display none funciona para desaparecer los elementos, recordemos que esta función es importante para hacer diseño responsive*/
+
+#navbar > ul > li > ul {
+    display:none; 
+    position:absolute; /*Esta posición hace que no se dañen los elementos que ya tiene un estilo*/
+    width: 200PX;
+    box-shadow: 0px 0px 3px green inset !important;
+
+}
+
+#navbar > ul > li:hover > ul{
+    display: block;
+    color: rgb(113, 176, 83) ;
+    background: #333333;
+    border-right: none;
+ 
+}
+
+#navbar > ul > li:hover > ul > li {
+    border-right: none;
+    width: 100%;
+}
+/*SUBMENU*/
+#navbar > ul > li > ul > li > ul > li{
+    display: none;
+    position: absolute;
+}
+
+#navbar > ul > li > ul > li:hover > ul > li{
+    display: block;
+    width: 200px;
+    border-right: none;
+}
+
+/*SIDE*/
+
+#side{
+    width: 200px;
+    max-width: 210px;
+    border: 1px solid red;
+    background: white;
+    text-align: center;
+    margin: 5px;
+    
+
+}
+
+.caja {
+    border: 1px solid #444;
+    width: 100%;
+    height: 250px;
+    border-bottom:1px dashed gray;
+    text-align: center;
+    padding: 2px;
+    display: block;
+    margin-top: 5px;
+    
+    
+    
+}
+
+/*CONTENT/
