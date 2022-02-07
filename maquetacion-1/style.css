@@ -58,6 +58,7 @@ body{
     color: rgb(113, 176, 83);
     
 }
+/*FINALCABECERA*/
 
 /*MENU*/
 
@@ -87,6 +88,8 @@ body{
     line-height: 40px;
     border-right: 1px solid white;
     transition: all 500ms;
+    
+    
    
 }
 
@@ -101,12 +104,17 @@ body{
     color: white;
     text-align: center;
     margin: 0px auto;
+    z-index: 1;
 }
 
 #navbar li:hover{
     background:rgb(113, 176, 83) ;
     box-shadow: 0px 0px 3px green inset !important;
     border: 1px solid green;
+    z-index: 1;
+    
+    
+    
 }
 
 /*MENU DESPLEGABLE*//*El display none funciona para desaparecer los elementos, recordemos que esta función es importante para hacer diseño responsive*/
@@ -116,6 +124,8 @@ body{
     position:absolute; /*Esta posición hace que no se dañen los elementos que ya tiene un estilo*/
     width: 200PX;
     box-shadow: 0px 0px 3px green inset !important;
+    
+    z-index: 2; /*Este elemento hace que se superponga al resto de elementos*/
 
 }
 
@@ -130,6 +140,7 @@ body{
 #navbar > ul > li:hover > ul > li {
     border-right: none;
     width: 100%;
+    
 }
 /*SUBMENU*/
 #navbar > ul > li > ul > li > ul > li{
@@ -143,12 +154,18 @@ body{
     border-right: none;
 }
 
-/*SIDE*/
+/*FINALMENU*/
+
+/*INICIOSIDE*/
+
+#general{
+    margin: 0px auto;
+}
 
 #side{
     width: 500px;
     max-width: 50%;
-    border: 1px solid red;
+    
     background: white;
     text-align: center;
     margin: 5px;
@@ -156,9 +173,32 @@ body{
     display: block;
     float: left;
     background-image: url(img/paven.png);
-
+    margin-top: 50px;
+    
     
 
+}
+
+.caja #links{
+    
+    margin: 3px;
+    text-align: left;
+    margin-top: 10px;
+    
+}
+.caja #links a{
+    color: rgb(113, 176, 83);
+    font-size: 18px;
+    text-align: left;
+}
+
+#links #linksone{
+    list-style-type: none;
+}
+
+.caja #links a:hover{
+    color: rgb(146, 139, 139);
+    text-shadow: 0px 0px 1px gray;
 }
 
 .caja {
@@ -167,15 +207,49 @@ body{
     height: 250px;
     border-bottom:1px dashed gray;
     text-align: center;
-    padding: 2px;
+    padding: 15px;
     display: block;  
-    background: white;
-    margin-left: 30px;
+    background: #FFFFFF;
+    margin-left: 103px;
+    box-shadow: 0px 0px 8px rgb(126, 119, 119);
+    position: relative;
     
     
     
 }
 
+
+
+.caja #lastlinks li a {
+    text-align: left !important;
+}
+
+#boton{
+    background:#69AB2A ;
+    margin-top: 5px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+
+}
+
+.caja h2{
+    background:#F2F3F2 ;
+}
+
+.caja #asidetittletwo{
+    color: #308CF2;
+}
+
+.caja #asidetittlethree{
+    color: rgb(177, 87, 85);
+}
+/*FINALASIDE*/
 
 /*CONTENT*/
 
@@ -183,14 +257,59 @@ body{
     display: block;
     width: 73%;
     float: left;
-    border: 1px solid red ;
+    
 }
 
 #cont .box{
     width: 780px;
     overflow-y: auto;
-    border:solid red;
+    background: #FFFFFF;
+
+    
     margin: 0px auto;
-    margin-top: 15px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 8px rgb(126, 119, 119);
+    padding: 10px;
 
 }
+
+#cont .box h2{
+    text-align: center;
+    margin: 15px;
+}
+
+#cont .box section {
+    margin: 15px;
+}
+
+/*stickers*/
+
+.stickerone {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -43px;
+    
+}
+
+.stickertwo{
+    position:absolute;
+    margin-left: 700px;
+    margin-top: -43px;
+
+}
+
+/*INICIOFOOTER*/
+
+#feet{
+    background: #333333;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5px;
+    
+    padding: 5px;
+}
+
+#feet a {
+    color: #448028;
+}
+/*FINALFOOTER*/
